@@ -7,7 +7,7 @@ app.secret_key = 'your_secret_key'  # Change this to a more secure key
 
 ALLOWED_HOSTS = ["54.76.108.67", "127.0.0.1", "localhost", "95.44.188.71", "3.251.82.126"]
 
-# MySQL Connection 
+
 try:
    db = mysql.connector.connect(
        host='devopsapp-sanjithsanju2811-a396.e.aivencloud.com',

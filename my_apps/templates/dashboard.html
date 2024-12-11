@@ -10,23 +10,9 @@
             background-color: black;
             color: green;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
-        header {
-            background-color: rgba(50, 50, 50, 0.8);
-            padding: 20px;
+        h1 {
             text-align: center;
-            border-bottom: 2px solid green;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        .welcome-message {
-            margin-top: 10px;
-            font-size: 18px;
-            color: lightgray;
         }
         .button {
             display: inline-block;
@@ -62,11 +48,8 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dashboard</h1>
-        <p class="welcome-message">hello user {{  }}</p>
-    </header>
     <div class="container">
+        <h1>Dashboard</h1>
         <a href="{{ url_for('add_measurement') }}" class="button">Add Measurement</a>
         <a href="{{ url_for('logout') }}" class="button">Logout</a>
         

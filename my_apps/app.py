@@ -78,7 +78,7 @@ def add_measurement():
        voltage = float(request.form['voltage'])
        power_factor = float(request.form['power_factor'])
        item_name = request.form['item_name']
-       power = (1.732 * current * voltage * power_factor) / 10000
+       power = (1.732 * current * voltage * power_factor) / 1000
        cursor = db.cursor()
        cursor.execute("""
            INSERT INTO measurements (user_id, current, voltage, power_factor, item_name, power)

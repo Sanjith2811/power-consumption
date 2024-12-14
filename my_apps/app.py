@@ -90,7 +90,7 @@ def edit_measurement(measurement_id):
         voltage = float(request.form['voltage'])
         power_factor = float(request.form['power_factor'])
         item_name = request.form['item_name']
-        power = (1.732 * current * voltage * power_factor) / 1000
+        power = (1.732 * current * voltage * power_factor) / 100
         cursor.execute("""
             UPDATE measurements
             SET current=%s, voltage=%s, power_factor=%s, item_name=%s, power=%s
